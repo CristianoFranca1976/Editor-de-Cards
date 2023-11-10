@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristiano Franca" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Estudo usando o java script pra editar as tags no HTML"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/LetraC.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Estudo Editor JS</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="editado">
+        <h1 id="principal"></h1>
+        <p id="paragrafo"></p>
+        <div id="imagem1"></div>
+      </div>
+      <div id="footer">
+        <!--Editor do H1 comeco-->
+        <div class="editor">
+          <div class="inputs">
+            <label for="textH1"
+              >Digite a tag <b>H1</b> aqui em baixo
+              <img src="assets/left.png" alt="arrow" class="imagems"
+            /></label>
+            <input
+              type="text"
+              name="text"
+              id="textH1"
+              title="Adicione seu texto aqui"
+              placeholder="Digite aqui"
+            />
+          </div>
+          <div class="botoes">
+            <button
+              type="button"
+              title="envie seu texto aqui"
+              onclick="enviarParaTagH1()"
+              class="botao"
+            >
+              enviar
+            </button>
+            <button
+              type="button"
+              onclick="editarTextoH1()"
+              class="botao"
+              title="Edite seu texto aqui"
+            >
+              Editar
+            </button>
+          </div>
+        </div>
+        <!--Editor do H1 termino-->
+        <!--Editor do p comeco-->
+        <div class="editor">
+          <div class="inputs">
+            <label for="textP"
+              >Digite a tag <b>P</b> aqui em baixo
+              <img src="assets/left.png" alt="arrow" class="imagems"
+            /></label>
+            <input
+              type="text"
+              name="textP"
+              id="textP"
+              title="Adicione seu texto aqui"
+              placeholder="Digite aqui"
+            />
+          </div>
+          <div class="botoes">
+            <button
+              type="button"
+              title="envie seu texto aqui"
+              onclick="enviarParaTagP()"
+              class="botao"
+            >
+              enviar
+            </button>
+            <button
+              type="button"
+              onclick="editarTextoP()"
+              class="botao"
+              title="Edite seu texto aqui"
+            >
+              Editar
+            </button>
+          </div>
+        </div>
+        <!--Editor do p termino-->
+        <!--Editor da imagem comeco-->
+        <div class="editor">
+          <div class="inputs">
+            <label for="imagemadded"
+              >Download imagem em baixo
+              <img src="assets/left.png" alt="arrow" class="imagems"
+            /></label>
+            <label for="imagemadded" class="busca"
+              >carregue a imagem aqui</label
+            >
+            <input
+              type="file"
+              name="imagemadded"
+              id="imagemadded"
+              title="Adicione sua imagem aqui"
+            />
+          </div>
+          <div class="botoes">
+            <button
+              type="button"
+              title="envie seu texto aqui"
+              onclick="enviarImagem()"
+              class="botao"
+            >
+              enviar
+            </button>
+            <button
+              type="button"
+              onclick="editarImagem() "
+              class="botao"
+              title="Edite seu texto aqui"
+            >
+              Editar
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Editor da imagem fim-->
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
